@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se na SmartConecta</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script
+      src="https://kit.fontawesome.com/89d28f01ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header login">
+            <!-- <img src="assets/" alt=""> -->
+            <a href="../index.html"><h2>SmartConecta</h2></a>
+
+            <ul>
+                <li>Página Inicial</li>
+                <li>Quem Somos<img src="" alt=""></li>
+                <li>Nossa Solução</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="mainCad">
+        <div class="formCad">
+            <div class="headerCad">
+                <!-- <img src="assets/google-logo.png" alt=""> -->
+                <h1 class="titleAcess">Cadastrar-se</h1>
+                <p>Bem-Vindo! Digite seus dados abaixo</p>
+                <p>*Campos obrigatórios</p>
+            </div>
+            <form onsubmit="return false">
+                <p>
+                    <label for="nome_cad">Nome*</label><br>
+                    <input id="nome_cad" class="campo" name="nome_cad" required="required" type="text" placeholder="Nome Completo">
+                </p>
+
+                <p>
+                    <label for="email_cad">E-mail*</label> <br>
+                    <input id="email_cad" class="campo" name="email_cad" required="required" type="email" placeholder="ex. contato@htmlecsspro.com"/>
+                </p>
+
+                <p>
+                    <label for="number_cad">Telefone*</label> <br>
+                    <input id="number_cad" class="campo" name="number_cad" required="required" type="phone" placeholder="(11) 99999-9999"/>
+                </p>
+
+                <p>
+                    <label for="senha_cad">Senha*</label> <br>
+                    <input id="senha_cad" class="campo" name="senha_cad" required="required" type="password" placeholder="********"/>
+                </p>
+
+                <p>
+                    <label for="senhaCf_cad">Confirmar Senha*</label> <br>
+                    <input id="senhaCf_cad" class="campo" name="senhaCf_cad" required="required" type="password" placeholder="********"/>
+                </p>
+
+                <!-- <input type="checkbox" id="remember" name="remember" checked> -->
+                <!-- <label for="remember" class="remember">Remember for 30 days</label> -->
+
+
+                <button  class="btnSignUp-Login" onclick="cadastrar()">Cadastrar</button>
+                <br> <br>
+                <!-- <button class="btnSignUpGoogle"><img src="assets/google-logo.png" alt="">Sign in with Google</button> -->
+
+                <p class="dontHave">Já tem uma conta? <a href="login.html" style="margin-bottom: 40px;"> Entrar</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="filhoFooter">
+          <div class="redes">
+            <h2>Redes Sociais</h2>
+            <ul>
+              <li>
+                <i
+                  class="fa-brands fa-square-twitter fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="">Twitter</a>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-square-instagram fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="">Instagram</a>
+              </li>
+              <li>
+                <i
+                  class="fa-brands fa-square-facebook fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="">Facebook</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i
+                ><a href="">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="acesso">
+            <h2>Acesso Rápido</h2>
+            <ul>
+              <li><a href="index.html">Página Inicial</a></li>
+              <li><a href="quemSomos.html">Quem Somos</a></li>
+              <li><a href="nossaSolucao.html">Nossa Solução</a></li>
+            </ul>
+          </div>
+
+          <div class="contato">
+            <h2 id="contato">Contato</h2>
+            <ul>
+              <li>
+                <i
+                  class="fa-brands fa-square-whatsapp fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="#">(11) 4227-7816</a>
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square-phone fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="#">(11) 4239-3200</a>
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square-envelope fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a href="mailto:contato@smartconecta.com.br">E-mail</a>
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-location-dot fa-2xl"
+                  style="color: black;"
+                ></i
+                ><a
+                  href="https://www.google.com/maps/place/Universidade+Municipal+de+S%C3%A3o+Caetano+do+Sul+-+Campus+Concei%C3%A7%C3%A3o/@-23.6181097,-46.578926,15z/data=!4m2!3m1!1s0x0:0xb8b2280e637ac0d9?sa=X&ved=2ahUKEwj6lprA8ev-AhVBq5UCHSEJAUwQ_BJ6BAhHEAg"
+                  target="_blank">R. Conceição, 321 - Santo Antônio, São Caetano do Sul</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+
+<script>
+    function cadastrar(){
+        var nomeVar = nome_cad.value;
+        var emailVar = email_cad.value;
+        var senhaVar = senha_cad.value;
+        var confSenhaVar = senhaCf_cad.value;
+        var telefoneVar = number_cad.value;
+        var sindicoVar = 1;
+        var blocoVar = null;
+        var torreVar = null;
+        var apartamentoVar = null;
+        var fkSindicoVar = null;
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+                telefoneServer: telefoneVar,
+                sindicoServer: sindicoVar,
+                blocoServer: blocoVar,
+                torreServer: torreVar,
+                apartamentoServer: apartamentoVar,
+                fkSindicoServer: fkSindicoVar
+            })
+        }).then(function (resposta) {
+            console.log("resposta: ", resposta);
+
+            if(resposta.ok){
+
+              let timerInterval
+          Swal.fire({
+            title: 'Cadastrado com sucesso',
+            html: 'Redirecionando em <b></b> milisegundos.',
+            icon: 'success',
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: () => {
+              Swal.showLoading()
+              const b = Swal.getHtmlContainer().querySelector('b')
+              timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+              }, 100)
+            },
+            willClose: () => {
+              clearInterval(timerInterval)
+            }
+          }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+              console.log('I was closed by the timer')
+            }
+          })
+
+          setTimeout(() => {
+            window.location.href = "login.html";
+          },2000);
+
+            }else{
+                throw("Houve um erro ao tentar realizar o cadastro!")
+            }
+        }).catch(function (resposta){
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+</script>
